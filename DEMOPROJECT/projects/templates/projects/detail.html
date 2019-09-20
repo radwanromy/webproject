@@ -1,0 +1,10 @@
+<img src="{{ Project_Name.Project_Logo }}">
+
+<h1>{{ Project_Name.Name }}</h1>
+<h3>{{ Project_Name.Software }}</h3>
+
+<u1>
+    {% for student in Project_Name.student_set.all %}
+    <l1>{{ student.Student_Or_Group_Name }} - {{ student.University }} - {{ student.Department }} - {{ student.Semester }}</l1>
+    {% endfor %}
+</u1>

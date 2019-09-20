@@ -1,0 +1,12 @@
+{% if all_projects %}
+     <h3>Here Are All My Projects</h3>
+    <ul>
+        {% for Project_Name in all_projects%}
+        <li><a href = "/projects/{{Project_Name.id}}">{{Project_Name.Name}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>You Don't Have Any Projects</h3>
+{% endif %}
+
+
